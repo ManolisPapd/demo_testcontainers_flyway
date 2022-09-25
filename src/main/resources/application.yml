@@ -4,18 +4,18 @@ server:
 spring:
   datasource:
     driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
-    url: jdbc:tc:sqlserver:2017-CU12:///test-core-database
+    url: jdbc:tc:mysql:8.0:///test-core-database
   jpa:
     properties:
       hibernate:
         default_batch_fetch_size: 16
     hibernate:
       ddl-auto: none
-    database-platform: org.hibernate.dialect.SQLServer2012Dialect
+    database-platform: org.hibernate.dialect.MySQL8Dialect
     open-in-view: false
   flyway:
     enabled: true
-    locations: classpath:db/migration/sqlserver
+    locations: classpath:db/migration/mysql
     table: "schema_version"
 
 logging:
