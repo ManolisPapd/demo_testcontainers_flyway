@@ -1,2 +1,5 @@
-# demo_testcontainers_flyway
-Demo app with Testcontainers and Flyway
+# Testcontainers (MSSQLServer) and Flyway
+
+Default credentials:
+- username: SA
+- password: A_Str0ng_Required_Password
